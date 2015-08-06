@@ -33,5 +33,5 @@ public class PlayerWarnPlugin extends SimplePlugin {
 	public Class<? extends CommandSet> getCommandSet() {
 		return Commands.class;
 	}
-	
+
 }

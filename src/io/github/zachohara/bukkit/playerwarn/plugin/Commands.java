@@ -24,23 +24,24 @@ import io.github.zachohara.bukkit.simpleplugin.command.Properties.Source;
 import io.github.zachohara.bukkit.simpleplugin.command.Properties.Target;
 
 /**
- * The {@code Commands} interface represents the set of commands supported by this plugin, and
- * contains a {@code Properties} object for each command.
+ * The {@code Commands} interface represents the set of commands supported by this plugin,
+ * and contains a {@code Properties} object for each command.
  *
  * @author Zach Ohara
  * @see Properties
  */
 public enum Commands implements CommandSet {
-	
+
 	WARN(new Properties(1, 1, Source.OP_ONLY, Target.ALL_ONLINE, new Warn()));
-	
+
 	/**
 	 * The {@code Properties} object specific to a single command.
 	 */
 	private Properties properties;
-	
+
 	/**
-	 * Constructs a new {@code Commands} with the given {@code Properties} for this command. 
+	 * Constructs a new {@code Commands} with the given {@code Properties} for this
+	 * command.
 	 *
 	 * @param p the {@code Properties} for this command.
 	 */
@@ -55,7 +56,7 @@ public enum Commands implements CommandSet {
 	public Properties getProperties() {
 		return this.properties;
 	}
-	
+
 	private static class Warn extends Implementation {
 
 		/**
@@ -66,7 +67,7 @@ public enum Commands implements CommandSet {
 			instance.sendTargetMessage("%s has warned you!");
 			return true;
 		}
-		
+
 		/**
 		 * {@inheritDoc}
 		 */
@@ -75,7 +76,7 @@ public enum Commands implements CommandSet {
 			instance.sendTargetMessage("%s has warned you! Oooga booga!");
 			return true;
 		}
-		
+
 	}
-	
+
 }
