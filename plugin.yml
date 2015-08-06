@@ -1,0 +1,10 @@
+name: PlayerWarn
+version: 1.0
+main:  io.github.zachohara.bukkit.playerwarn.plugin.PlayerWarnPlugin
+depend: [SimplePlugin]
+description: Warn other people
+author: Zach Ohara
+commands:
+  warn:
+    description: Warn another player
+    usage: /warn <player>
