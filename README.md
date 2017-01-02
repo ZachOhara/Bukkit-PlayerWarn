@@ -16,7 +16,7 @@ Download the "PlayerWarn v___.jar" from the root folder of this repository, or c
 
 ## Added Commands:
 
-### BanCraft
+### Warn
 
 Usage: `/warn <player>`
 
