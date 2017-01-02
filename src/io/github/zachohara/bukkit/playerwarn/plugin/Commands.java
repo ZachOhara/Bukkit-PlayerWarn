@@ -56,7 +56,6 @@ public enum Commands implements CommandSet {
 
 	private static class Warn extends Implementation {
 
-
 		@Override
 		protected boolean doPlayerCommand(CommandInstance instance) {
 			instance.sendTargetMessage("%s has warned you!");
