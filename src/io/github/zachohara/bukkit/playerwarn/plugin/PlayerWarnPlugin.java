@@ -26,9 +26,6 @@ import io.github.zachohara.bukkit.simpleplugin.plugin.SimplePlugin;
  */
 public class PlayerWarnPlugin extends SimplePlugin {
 
-	/**
-	 * {@inheritDoc}
-	 */
 	@Override
 	public Class<? extends CommandSet> getCommandSet() {
 		return Commands.class;

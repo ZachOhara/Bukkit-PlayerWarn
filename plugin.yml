@@ -1,5 +1,5 @@
 name: PlayerWarn
-version: 1.0
+version: 1.1
 main:  io.github.zachohara.bukkit.playerwarn.plugin.PlayerWarnPlugin
 depend: [SimplePlugin]
 description: Warn other people

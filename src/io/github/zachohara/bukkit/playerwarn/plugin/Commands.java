@@ -49,9 +49,6 @@ public enum Commands implements CommandSet {
 		this.properties = p;
 	}
 
-	/**
-	 * {@inheritDoc}
-	 */
 	@Override
 	public Properties getProperties() {
 		return this.properties;
@@ -59,21 +56,18 @@ public enum Commands implements CommandSet {
 
 	private static class Warn extends Implementation {
 
-		/**
-		 * {@inheritDoc}
-		 */
+
 		@Override
 		protected boolean doPlayerCommand(CommandInstance instance) {
 			instance.sendTargetMessage("%s has warned you!");
+			instance.sendMessage("You have warned %t.");
 			return true;
 		}
 
-		/**
-		 * {@inheritDoc}
-		 */
 		@Override
 		protected boolean doConsoleCommand(CommandInstance instance) {
 			instance.sendTargetMessage("%s has warned you! Oooga booga!");
+			instance.sendMessage("You have warned %t.");
 			return true;
 		}
 
